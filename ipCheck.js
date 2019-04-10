@@ -3,7 +3,7 @@ var request = require('request');
 var ipUrl = 'https://api.ipify.org/'
 //User Settings
 //Your IFTTT Webhook Key
-var iftttKey = '/with/key/'+'gRH1scbO8Jx3VvASK3twstf_nMq2V3BPSY_vgjDAEhk';
+var iftttKey = '/with/key/'+'{{YOUR KEY HERE}}';
 var iftttLink = 'https://maker.ifttt.com/trigger/';
 
 
