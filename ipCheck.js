@@ -8,10 +8,12 @@ var ipUrl = 'https://api.ipify.org/'
 //User Settings
 
 //Your IFTTT Webhook Key
+//Create IFTTT receive web request with event name of ip_update
+var iftttKey = '/with/key/'+'{{YOUR KEY HERE}}';
 var iftttLink = 'https://maker.ifttt.com/trigger/';
 
 //Run Everyday at Midnight
-var j = schedule.scheduleJob('0 0 23 * * *',function(){
+var j = schedule.scheduleJob('0 0 12 * * *',function(){
 
 request ({
     url: ipUrl
@@ -25,3 +27,4 @@ request ({
             console.log('Your Current IP is: '+body);
     });
 });
+
